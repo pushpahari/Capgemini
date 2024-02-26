@@ -1,0 +1,88 @@
+
+LINUX file structure
+
+file structure represents the work flow of the operation system.
+in windows it is divided in to drive{like C drive{total information about operators like configuration files excute files,storage file,E drive,F drive(here we can store the data)}
+
+but in linux all files is distrubut like conf ,storage file
+
+/ = parent directory or main directory of all directories in linux
+/root = root user home directory { sudo su -} he is also called admin he have full power
+/home = user home directory .here information about user{ su -shyam}
+/bin = contain all binary files these are executable files.
+       this files doesnt reflect the system {ls ,pwd,}
+/sbin = it contain executable which will effect the system
+         eg ;(useradd)->creating user
+/dev = device releated information like hard disks & disks partitions
+/etc = all configuration store here
+/mnt = mounting points information stored here {labeling for space present in harddisk}
+/opt = it is a optional directory {manually download and install application like tar and zip files}
+          user can store 3rd party apllication here like maven ,tomcat,nexus
+/proc = it contains process information of computer 
+/srv = service related information like kernel service eg: kernel
+/sys = system information like processor ,ram,hdd ,hardwire
+/var = it is variable directory logs,mails,cronjob	{mainly used to check logs}	  
+/usr = users applications store here eg: apt install jenkins -y{apt use chesi install chesina application lu ani ekada untai}
+/media = like pendrive {removable drivers}
+/tmp = storage used to stores temporary
+
+
+command 
+man commandname -->it show information all about command
+whoami = it display who login which user login
+id = details display by user 
+uname -a -->its show kernal version 
+uname -m --> it show system articulture
+top --> show user login from which time onwards
+ifconfig --> it show ip of system
+pwd =>present working directory
+cd /  =>change directory
+ls = to list files
+ls -l = long list {here we can see file permission and file size}
+ls -lh = it long list human readable lanugage
+ls -lr = it show files in reverse order
+ls -la = it show hidden files also{like . file
+cd bin / = ls | grep "ls"
+| = pipe it is a process {{ls} oka  command output works as a input command }
+grep = it is filiter ---> ls | grep "a"  {ls use chesi display chesamu files and pipe use chesi a name tho una files ani display chesaru}
+head = it will display 1st 10 files { ls /etc/ | head }
+tail = it will display last 10 files { ls /etc/ | tail }
+history = it show history of all commands { i want just last 10commands = history | head }
+less and more same = work same as cat command but while using less page divided into24 lines , f used to next page   , b used to back page,q used to quit}
+/wordname used to search
+
+wc = display how many lines in file how many words c,characters{wc filename} {wc -l filename = it shows only lines} {wc -c filename = it show only characters , wc -w it display words}
+mkdir = directory create 
+touch = file create
+rm filename = it will remove file
+rm -rf = it will delete containt in files and directory
+rm -f filename = force fully delete
+rm -rfv = it show sucessfully deleted file
+cp sourcepath destpath 
+mv sourcepath destpath
+cat = used to read file
+cat > filename => we can write containt through keyboard need not to go vi editior and nano editior
+cat >> filename ==>already una containt ki new containt add avutundi
+echo "hello" > filename -->it will create file and copy containt or it can copy exisiting containt also
+
+
+
+
+
+
+		  
+		  
+	   
+	   
+
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
